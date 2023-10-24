@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="570.0" prefWidth="928.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.mybike.Back">
+   <children>
+      <TableView fx:id="table" layoutX="528.0" layoutY="207.0" onMouseClicked="#selectutilisateur" prefHeight="290.0" prefWidth="416.0">
+        <columns>
+          <TableColumn fx:id="id_table" prefWidth="53.5999755859375" text="id" />
+          <TableColumn fx:id="modele_table" prefWidth="107.20001220703125" text="modele" />
+            <TableColumn fx:id="etat_table" prefWidth="81.60003662109375" text="etat" />
+            <TableColumn fx:id="prix_table" prefWidth="60.79998779296875" text="prix" />
+            <TableColumn fx:id="image_table" prefWidth="111.199951171875" text="image" visible="false" />
+            <TableColumn fx:id="station_table" prefWidth="112.79998779296875" text="station" />
+        </columns>
+      </TableView>
+      <TextField fx:id="id_back" layoutX="46.0" layoutY="33.0" promptText="id" styleClass="textfield-record-design" stylesheets="@dashboard.css" visible="false" />
+      <ComboBox fx:id="etat_back" layoutX="296.0" layoutY="358.0" onAction="#comboBox" prefHeight="33.0" prefWidth="188.0" promptText="etat" styleClass="textfield-record-design" stylesheets="@dashboard.css" />
+      <TextField fx:id="prix_back" layoutX="296.0" layoutY="302.0" promptText="prix" styleClass="textfield-record-design" stylesheets="@dashboard.css" />
+      <ComboBox fx:id="modele_back" layoutX="296.0" layoutY="414.0" onAction="#comboBox1" prefHeight="33.0" prefWidth="188.0" promptText="modele" styleClass="textfield-record-design" stylesheets="@dashboard.css" />
+      <TextField fx:id="station_back" layoutX="296.0" layoutY="246.0" promptText="station" styleClass="textfield-record-design" stylesheets="@dashboard.css" />
+      <Button fx:id="insert_back" layoutX="564.0" layoutY="507.0" mnemonicParsing="false" onAction="#insert" prefHeight="50.0" prefWidth="82.0" styleClass="insert-button" stylesheets="@dashboard.css" text="Insert" />
+      <Button fx:id="update_back" layoutX="686.0" layoutY="507.0" mnemonicParsing="false" onAction="#update" prefHeight="50.0" prefWidth="82.0" styleClass="update-button" stylesheets="@dashboard.css" text="Update" />
+      <Button fx:id="delete_back" layoutX="816.0" layoutY="507.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="89.0" styleClass="delete-button" stylesheets="@dashboard.css" text="Delete" />
+      <Label fx:id="nb_velos" layoutX="285.0" layoutY="476.0" prefHeight="61.0" prefWidth="210.0" stylesheets="@dashboard.css" text="Nombre de vélos disponibles">
+         <font>
+            <Font name="System Italic" size="14.0" />
+         </font></Label>
+      <AnchorPane prefHeight="604.0" prefWidth="200.0" styleClass="navbar" stylesheets="@dashboard.css">
+         <children>
+            <Circle fill="#535c63" layoutX="98.0" layoutY="94.0" radius="80.0" smooth="false" stroke="#403b3b" strokeType="INSIDE" strokeWidth="0.0" />
+            <Text fill="#faf9f9" layoutX="48.0" layoutY="198.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Welcome!" wrappingWidth="103.38632202148438">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </Text>
+            <Button layoutX="14.0" layoutY="210.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="168.0" styleClass="navbutton" text="                Home" textAlignment="CENTER" textFill="WHITE">
+               <stylesheets>
+                  <URL value="@dashboard.css" />
+                  <URL value="@design.css" />
+               </stylesheets>
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            <Button layoutX="14.0" layoutY="260.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="168.0" styleClass="navbutton" text="                Reservation" textAlignment="CENTER" textFill="WHITE">
+               <stylesheets>
+                  <URL value="@dashboard.css" />
+                  <URL value="@design.css" />
+               </stylesheets>
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            <Button layoutX="14.0" layoutY="310.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="168.0" styleClass="navbutton" text="                Event" textAlignment="CENTER" textFill="WHITE">
+               <stylesheets>
+                  <URL value="@dashboard.css" />
+                  <URL value="@design.css" />
+               </stylesheets>
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            <Button layoutX="14.0" layoutY="361.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="168.0" styleClass="navbutton" text="                Shop" textAlignment="CENTER" textFill="WHITE">
+               <stylesheets>
+                  <URL value="@dashboard.css" />
+                  <URL value="@design.css" />
+               </stylesheets>
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            <Button layoutX="14.0" layoutY="412.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="168.0" styleClass="navbutton" text="                Maintenance" textAlignment="CENTER" textFill="WHITE">
+               <stylesheets>
+                  <URL value="@dashboard.css" />
+                  <URL value="@design.css" />
+               </stylesheets>
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            <Button layoutX="16.0" layoutY="460.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="168.0" styleClass="navbutton" text="                Support" textAlignment="CENTER" textFill="WHITE">
+               <stylesheets>
+                  <URL value="@dashboard.css" />
+                  <URL value="@design.css" />
+               </stylesheets>
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            <Button layoutX="16.0" layoutY="508.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="168.0" styleClass="navbutton" text="                Logout" textAlignment="CENTER" textFill="WHITE">
+               <stylesheets>
+                  <URL value="@dashboard.css" />
+                  <URL value="@design.css" />
+               </stylesheets>
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="200.0" layoutY="56.0" prefHeight="106.0" prefWidth="810.0" styleClass="navbar" stylesheets="@dashboard.css">
+         <children>
+            <ImageView fitHeight="106.0" fitWidth="200.0" layoutX="318.0" layoutY="-1.0">
+               <image>
+                  <Image url="C:\Users\houss\Desktop\MyBike\src\main\resources\com\example\mybike\rawef.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <Text fill="#ac5c5c" layoutX="242.0" layoutY="209.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Gestion des vélos" wrappingWidth="251.99999999999994">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>
