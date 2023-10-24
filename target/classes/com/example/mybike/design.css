@@ -1,0 +1,16 @@
+.button-design{
+
+    -fx-background-color:linear-gradient(to bottom right, #2f466b, #662d60);
+    -fx-background-radius:20px;
+    -fx-cursor:hand;
+
+}
+.textfield-design{
+
+    -fx-background-color:transparent;
+    -fx-background-radius:10px;
+    -fx-border-color:linear-gradient(to bottom right, #2f466b, #662d60);
+    -fx-border-radius:10px;
+    -fx-text-inner-color:#000;
+
+}
