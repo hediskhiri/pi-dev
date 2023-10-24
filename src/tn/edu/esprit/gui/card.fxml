@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="191.0"
+      prefWidth="347.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="tn.edu.esprit.gui.cardController">
+    <children>
+        <ImageView fx:id="picProduit" fitHeight="192.0" fitWidth="174.0" pickOnBounds="true" preserveRatio="true"/>
+        <VBox fx:id="commander" prefHeight="191.0" prefWidth="173.0">
+            <children>
+                <Label fx:id="nomProduit" text="Label"/>
+                <Label fx:id="prixProduit" text="Label"/>
+                <Label fx:id="remiseProduit" text="Label"/>
+                <Button mnemonicParsing="false" text="Button"/>
+            </children>
+        </VBox>
+    </children>
+</HBox>

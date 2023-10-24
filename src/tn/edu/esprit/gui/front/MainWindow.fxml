@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.*?>
+<AnchorPane id="AnchorPane" maxHeight="1.7976931348623157E308" minHeight="-Infinity" minWidth="800.0" prefHeight="632.0"
+            prefWidth="800.0" style="-fx-background-color: #EEEEEE;" stylesheets="@../../tools/MainStyle.css"
+            xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="tn.edu.esprit.gui.front.MainWindowController">
+    <AnchorPane fx:id="topBar" layoutX="200.0" prefHeight="80.0" prefWidth="600.0" AnchorPane.leftAnchor="200.0"
+                AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0"/>
+    <AnchorPane fx:id="content" layoutX="200.0" layoutY="10.0" prefHeight="552.0" prefWidth="600.0"
+                style="-fx-background-color: #EEEEFF;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="200.0"
+                AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="80.0"/>
+    <AnchorPane prefHeight="633.0" prefWidth="200.0" styleClass="navbar" stylesheets="@../designe.css">
+        <children>
+            <Circle fill="#5c5e61" layoutX="100.0" layoutY="100.0" radius="86.0" stroke="BLACK" strokeType="INSIDE"/>
+            <Label layoutX="54.0" layoutY="208.0" prefHeight="27.0" prefWidth="106.0" text="WELCOME" textFill="WHITE">
+                <font>
+                    <Font size="18.0"/>
+                </font>
+            </Label>
+            <Button layoutX="8.0" layoutY="270.0" mnemonicParsing="false" prefHeight="46.0" prefWidth="172.0"
+                    styleClass="navbutton" stylesheets="@../../gui/designe.css" text="           Home" textFill="WHITE">
+                <font>
+                    <Font size="18.0"/>
+                </font>
+            </Button>
+            <Button layoutX="8.0" layoutY="327.0" mnemonicParsing="false" prefHeight="46.0" prefWidth="172.0"
+                    styleClass="navbutton" stylesheets="@../../gui/designe.css" text="     Reservation "
+                    textFill="WHITE">
+                <font>
+                    <Font size="18.0"/>
+                </font>
+            </Button>
+            <Button layoutX="8.0" layoutY="383.0" mnemonicParsing="false" prefHeight="46.0" prefWidth="172.0"
+                    styleClass="navbutton" stylesheets="@../../gui/designe.css" text="         Event" textFill="WHITE">
+                <font>
+                    <Font size="18.0"/>
+                </font>
+            </Button>
+            <Button layoutX="8.0" layoutY="440.0" mnemonicParsing="false" prefHeight="46.0" prefWidth="172.0"
+                    styleClass="navbutton" stylesheets="@../../gui/designe.css" text="          Shop" textFill="WHITE">
+                <font>
+                    <Font size="18.0"/>
+                </font>
+            </Button>
+            <Button layoutX="8.0" layoutY="494.0" mnemonicParsing="false" prefHeight="46.0" prefWidth="172.0"
+                    styleClass="navbutton" stylesheets="@../../gui/designe.css" text="        Support" textFill="WHITE">
+                <font>
+                    <Font size="18.0"/>
+                </font>
+            </Button>
+            <Button layoutX="8.0" layoutY="549.0" mnemonicParsing="false" onAction="#logout" prefHeight="46.0"
+                    prefWidth="172.0" styleClass="navbutton" stylesheets="@../../gui/designe.css" text="         Logout"
+                    textFill="WHITE">
+                <font>
+                    <Font size="18.0"/>
+                </font>
+            </Button>
+        </children>
+    </AnchorPane>
+</AnchorPane>

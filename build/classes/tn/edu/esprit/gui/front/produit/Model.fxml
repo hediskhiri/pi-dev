@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane stylesheets="@../../../tools/MainStyle.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+    <AnchorPane layoutX="30.0" layoutY="30.0" style="-fx-background-color: white;" styleClass="window-rounded" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="30.0" AnchorPane.rightAnchor="30.0" AnchorPane.topAnchor="10.0">
+        <effect>
+            <DropShadow blurType="GAUSSIAN" color="#00000033" height="50.0" radius="24.5" width="50.0" />
+        </effect>
+        <HBox AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+
+            <BorderPane>
+                <center>
+                </center>
+                <center>
+                    <ImageView fx:id="imageIV" fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
+                        <Image url="@../../../images/mdi/image-placeholder.png" />
+                    </ImageView>
+                </center>
+            <HBox.margin>
+               <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+            </HBox.margin>
+            <top>
+               <Pane prefHeight="2.0" style="-fx-background-color: grey;" BorderPane.alignment="CENTER" />
+            </top>
+            <right>
+               <Pane prefWidth="2.0" style="-fx-background-color: grey;" BorderPane.alignment="CENTER" />
+            </right>
+            <bottom>
+               <Pane prefHeight="2.0" style="-fx-background-color: grey;" BorderPane.alignment="CENTER" />
+            </bottom>
+            <left>
+               <Pane prefWidth="2.0" style="-fx-background-color: grey;" BorderPane.alignment="CENTER" />
+            </left>
+            </BorderPane>
+            <VBox spacing="10.0">
+                <HBox.margin>
+                    <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                </HBox.margin>
+                <Text fx:id="idNomProd" text="IdCategorie" wrappingWidth="190">
+                    <font>
+                        <Font name="System Bold" size="15.0" />
+                    </font>
+                </Text>
+                <Text fx:id="idDescriptionProd" text="IdCategorie" wrappingWidth="190">
+                    <font>
+                        <Font name="System Bold" size="15.0" />
+                    </font>
+                </Text>
+            </VBox>
+            <VBox spacing="10.0" HBox.hgrow="ALWAYS">
+                <HBox.margin>
+                    <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                </HBox.margin>
+
+                <Text fx:id="idPrixProd" text="IdCategorie" wrappingWidth="190">
+                    <font>
+                        <Font name="System Bold" size="15.0" />
+                    </font>
+                </Text>
+                <Text fx:id="idRemise" text="IdCategorie" wrappingWidth="190">
+                    <font>
+                        <Font name="System Bold" size="15.0" />
+                    </font>
+                </Text>
+                <Text fx:id="idCategories" text="IdCategorie" wrappingWidth="190">
+                    <font>
+                        <Font name="System Bold" size="15.0" />
+                    </font>
+                </Text>
+            </VBox>
+                  <VBox>
+                <HBox.margin>
+                    <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                </HBox.margin>
+                <Button fx:id="addToCartButton" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" styleClass="light-button" text="Ajouter au panier">
+                    <VBox.margin>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                    </VBox.margin>
+                </Button>
+            </VBox>
+
+        </HBox>
+    </AnchorPane>
+</AnchorPane>
