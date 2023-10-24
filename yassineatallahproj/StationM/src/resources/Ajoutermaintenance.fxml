@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="474.0" prefWidth="864.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="resources.AjoutermaintenanceController">
+    <stylesheets>
+        <URL value="@ajoutermaintenance.css" />
+    </stylesheets>
+   <children>
+      <AnchorPane prefHeight="476.0" prefWidth="161.0" styleClass="navbar" stylesheets="@ajoutstation.css">
+         <children>
+            <Circle fill="#4d5761" layoutX="81.0" layoutY="73.0" radius="59.0" stroke="BLACK" strokeType="INSIDE" />
+            <Button layoutX="20.0" layoutY="180.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="124.0" styleClass="navbutton" stylesheets="@ajoutstation.css" text="        Home" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            <Button layoutX="20.0" layoutY="217.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="124.0" styleClass="navbutton" stylesheets="@ajoutstation.css" text="     Reservation" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            <Button layoutX="20.0" layoutY="255.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="124.0" styleClass="navbutton" stylesheets="@ajoutstation.css" text="          Event" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            <Button layoutX="20.0" layoutY="294.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="124.0" styleClass="navbutton" stylesheets="@ajoutstation.css" text="          Shop" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            <Button layoutX="20.0" layoutY="332.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="124.0" styleClass="navbutton" stylesheets="@ajoutstation.css" text="        Station" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            <Button layoutX="20.0" layoutY="370.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="124.0" styleClass="navbutton" stylesheets="@ajoutstation.css" text="       Support" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            <Button layoutX="20.0" layoutY="408.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="124.0" styleClass="navbutton" stylesheets="@ajoutstation.css" text="        Logout" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            <Text fill="WHITE" layoutX="40.0" layoutY="166.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Welcome !" wrappingWidth="84.2640609741211">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Text>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="134.0" prefHeight="94.0" prefWidth="200.0" />
+      <AnchorPane layoutX="134.0" prefHeight="42.0" prefWidth="805.0">
+         <children>
+            <Button fx:id="exit0" layoutX="756.0" layoutY="8.0" mnemonicParsing="false" onAction="#exit" styleClass="exit" stylesheets="@ajoutstation.css" text="exit" textFill="WHITE" />
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="160.0" layoutY="42.0" prefHeight="83.0" prefWidth="780.0" styleClass="card-top" stylesheets="@ajoutstation.css">
+         <children>
+            <ImageView fitHeight="83.0" fitWidth="264.0" layoutX="217.0">
+               <image>
+                  <Image url="@../images/380417705_703858877758211_884682150734971159_n.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="162.0" layoutY="125.0" prefHeight="350.0" prefWidth="780.0">
+         <children>
+            <TableView fx:id="table8" layoutX="390.0" layoutY="74.0" onMouseClicked="#selectmaintenance" prefHeight="242.0" prefWidth="354.0" styleClass="textfield-record-design" stylesheets="@ajoutstation.css">
+              <columns>
+                  <TableColumn fx:id="id_mmaintenance" minWidth="0.0" prefWidth="0.0" text="id_m" />
+                  <TableColumn fx:id="id_vmaintenance" minWidth="0.0" prefWidth="0.0" text="id_v" />
+                <TableColumn fx:id="startmaintenance" prefWidth="179.99996948242188" text="start date" />
+                  <TableColumn fx:id="endmaintenance" prefWidth="172.79998779296875" text="end date" />
+              </columns>
+            </TableView>
+            <Text fill="#a40f86" layoutX="37.0" layoutY="145.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Velo:" wrappingWidth="59.2750244140625">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Text>
+            <Text fill="#a40f86" layoutX="36.0" layoutY="185.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Start date:" wrappingWidth="84.2640609741211">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Text>
+            <Text fill="#a40f86" layoutX="37.0" layoutY="231.0" strokeType="OUTSIDE" strokeWidth="0.0" text="End date:" wrappingWidth="84.2640609741211">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Text>
+            <Button fx:id="ajoutermaintenance" layoutX="67.0" layoutY="269.0" mnemonicParsing="false" onAction="#MAINTENA" prefHeight="26.0" prefWidth="102.0" styleClass="navbutton" stylesheets="@ajoutstation.css" text="    Ajouter" />
+            <Button fx:id="supprimermaintenance" layoutX="226.0" layoutY="269.0" mnemonicParsing="false" onAction="#supprimermain" prefHeight="26.0" prefWidth="111.0" styleClass="navbutton" stylesheets="@ajoutstation.css" text="   Supprimer" />
+            <ComboBox fx:id="velocombo" layoutX="123.0" layoutY="123.0" prefWidth="150.0" styleClass="textfield-record-design" stylesheets="@ajoutstation.css" />
+            <Text fill="#a40f86" layoutX="37.0" layoutY="105.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Station:" wrappingWidth="59.2750244140625">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Text>
+            <ComboBox fx:id="stationcombo" layoutX="123.0" layoutY="83.0" prefWidth="150.0" styleClass="textfield-record-design" stylesheets="@ajoutstation.css" />
+            <DatePicker fx:id="startdatestartdate" layoutX="122.0" layoutY="162.0" prefHeight="33.0" prefWidth="188.0" styleClass="textfield-record-design" stylesheets="@ajoutstation.css" />
+            <DatePicker fx:id="enddateenddate" layoutX="122.0" layoutY="207.0" prefHeight="34.0" prefWidth="188.0" styleClass="textfield-record-design" stylesheets="@ajoutstation.css" />
+            <Text fill="#940505" layoutX="122.0" layoutY="44.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Maintenance:" wrappingWidth="175.5999755859375">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Text>
+            <ComboBox fx:id="sortingComboBox" layoutX="579.0" layoutY="37.0" onAction="#sortTable" prefWidth="150.0" promptText="Sort by" />
+         </children></AnchorPane>
+   </children>
+</AnchorPane>
