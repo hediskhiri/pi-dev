@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="571.0" prefWidth="837.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="reclamGui.BackreclController">
+   <children>
+      <AnchorPane prefHeight="571.0" prefWidth="200.0" styleClass="navbar" stylesheets="@design.css">
+         <children>
+            <Circle fill="#30373e" layoutX="100.0" layoutY="88.0" radius="88.0" stroke="BLACK" strokeType="INSIDE" />
+            <Button layoutX="18.0" layoutY="187.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="158.0" styleClass="navbutton" stylesheets="@design.css" text="       Home" textFill="#fafafa">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+            <Button layoutX="18.0" layoutY="240.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="158.0" styleClass="navbutton" stylesheets="@design.css" text="     Résevation" textFill="#fafafa">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+            <Button layoutX="18.0" layoutY="296.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="158.0" styleClass="navbutton" stylesheets="@design.css" text="        Event" textFill="#fafafa">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+            <Button layoutX="18.0" layoutY="349.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="158.0" styleClass="navbutton" stylesheets="@design.css" text="       Shop" textFill="#fafafa">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+            <Button layoutX="18.0" layoutY="403.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="158.0" styleClass="navbutton" stylesheets="@design.css" text="    Maintenance" textFill="#fafafa">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+            <Button layoutX="18.0" layoutY="459.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="158.0" styleClass="navbutton" stylesheets="@design.css" text="      Support" textFill="#fafafa">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+            <Button layoutX="18.0" layoutY="511.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="158.0" styleClass="navbutton" stylesheets="@design.css" text="      Logout" textFill="#fafafa">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+            <FontAwesomeIcon fill="#fffdfd" glyphName="HOME" layoutX="23.0" layoutY="217.0" size="2em" text="" />
+            <FontAwesomeIcon fill="#fffbfb" glyphName="TICKET" layoutX="22.0" layoutY="270.0" size="2em" text="" />
+            <FontAwesomeIcon fill="WHITE" glyphName="CALENDAR" layoutX="23.0" layoutY="324.0" size="2em" />
+            <FontAwesomeIcon fill="#fffcfc" glyphName="WRENCH" layoutX="29.0" layoutY="431.0" size="2em" wrappingWidth="10.285714149475098" />
+            <FontAwesomeIcon fill="#fafafa" glyphName="SUPPORT" layoutX="27.0" layoutY="487.0" size="2em" />
+            <FontAwesomeIcon fill="#f4f4f4" glyphName="CLOSE" layoutX="33.0" layoutY="535.0" size="2em" />
+            <FontAwesomeIcon fill="WHITE" layoutX="28.0" layoutY="373.0" size="2em" />
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="200.0" layoutY="58.0" prefHeight="112.0" prefWidth="638.0" styleClass="card-top" stylesheets="@design.css">
+         <children>
+            <ImageView fitHeight="100.0" fitWidth="200.0" layoutX="219.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@380417705_703858877758211_884682150734971159_n%20(1).png" />
+               </image>
+            </ImageView>
+         </children></AnchorPane>
+      <AnchorPane layoutX="200.0" prefHeight="58.0" prefWidth="638.0">
+         <children>
+            <Button fx:id="exit" layoutX="545.0" layoutY="14.0" mnemonicParsing="false" onAction="#EXIT" prefHeight="34.0" prefWidth="66.0" styleClass="exit" stylesheets="@design.css" />
+            <FontAwesomeIcon fill="WHITE" glyphName="CLOSE" layoutX="572.0" layoutY="37.0" size="2em" text="" wrappingWidth="28.628522872924805" />
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="repond" layoutX="199.0" layoutY="170.0" prefHeight="401.0" prefWidth="638.0">
+         <children>
+            <TableView fx:id="table" layoutX="14.0" layoutY="58.0" onMouseClicked="#selectionnerReclamation" prefHeight="238.0" prefWidth="603.0">
+              <columns>
+                <TableColumn fx:id="titre" prefWidth="130.40003967285156" text="titre" />
+                  <TableColumn fx:id="description" prefWidth="140.0" text="Description" />
+                  <TableColumn fx:id="date" prefWidth="104.800048828125" text="Date" />
+                  <TableColumn fx:id="email" prefWidth="131.199951171875" text="email" />
+                  <TableColumn fx:id="etat" prefWidth="94.4000244140625" text="Etat" />
+              </columns>
+            </TableView>
+            <Button fx:id="supprimer" layoutX="491.0" layoutY="303.0" mnemonicParsing="false" onAction="#supprimer" prefHeight="48.0" prefWidth="113.0" styleClass="delete-button" stylesheets="@design.css" text="Supprimer" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+            <Button fx:id="repondre" layoutX="36.0" layoutY="303.0" mnemonicParsing="false" onAction="#repondre" prefHeight="48.0" prefWidth="114.0" styleClass="insert-button" stylesheets="@design.css" text="Répondre" />
+            <Button fx:id="navigate2" layoutX="242.0" layoutY="303.0" mnemonicParsing="false" onAction="#navigate2" prefHeight="48.0" prefWidth="167.0" styleClass="insert-button" stylesheets="@design.css" text="Examiner les réponses" />
+            <TextField fx:id="filtreReclamations" layoutX="14.0" layoutY="14.0" prefHeight="26.0" prefWidth="158.0" promptText="Chercher une Réclamation" />
+            <ComboBox fx:id="ComboboxTri" layoutX="455.0" layoutY="15.0" prefWidth="150.0" promptText="trier" />
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="Ajoutreponse" layoutX="199.0" layoutY="170.0" prefHeight="402.0" prefWidth="638.0" visible="false">
+         <children>
+            <TextArea fx:id="contenutext" layoutX="81.0" layoutY="85.0" prefHeight="200.0" prefWidth="476.0" promptText="répondre ici" />
+            <Button fx:id="Ajout" layoutX="81.0" layoutY="313.0" mnemonicParsing="false" onAction="#ajouterReponse" prefHeight="40.0" prefWidth="176.0" styleClass="insert-button" stylesheets="@design.css" text="Ajouter Reponse" />
+            <Button fx:id="navigate" layoutX="381.0" layoutY="313.0" mnemonicParsing="false" onAction="#affiche" prefHeight="40.0" prefWidth="176.0" styleClass="print-button" stylesheets="@design.css" text="Examiner les réponses" />
+            <Button fx:id="retour1" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#retour1" styleClass="chart-Button" stylesheets="@design.css" text="Retour" />
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="modifierreponse" layoutX="200.0" layoutY="170.0" prefHeight="402.0" prefWidth="638.0" visible="false">
+         <children>
+            <TableView fx:id="tablereponse" layoutX="120.0" layoutY="54.0" prefHeight="248.0" prefWidth="398.0">
+               <columns>
+                  <TableColumn fx:id="colonnetitre" prefWidth="105.60003662109375" text="titre" />
+                  <TableColumn fx:id="colonnedescr" prefWidth="170.39996337890625" text="description" />
+                  <TableColumn fx:id="colonnecontenu" prefWidth="122.39990234375" text="contenu" />
+                  <TableColumn fx:id="idrep" minWidth="0.0" prefWidth="0.0" text="idrep" visible="false" />
+               </columns>
+            </TableView>
+            <Button fx:id="boutonmodifier" layoutX="85.0" layoutY="329.0" mnemonicParsing="false" onAction="#modifierReponse" prefHeight="40.0" prefWidth="114.0" styleClass="update-button" stylesheets="@design.css" text="Modifier" />
+            <Button fx:id="boutonsupprimer" layoutX="461.0" layoutY="329.0" mnemonicParsing="false" onAction="#supprimerReponse" prefHeight="40.0" prefWidth="114.0" styleClass="delete-button" stylesheets="@design.css" text="Supprimer" />
+            <Button fx:id="retour2" layoutX="19.0" layoutY="14.0" mnemonicParsing="false" onAction="#retour2" prefHeight="26.0" prefWidth="66.0" styleClass="chart-Button" stylesheets="@design.css" text="Retour" />
+            <Button fx:id="navigate3" layoutX="238.0" layoutY="329.0" mnemonicParsing="false" onAction="#navigate3" prefHeight="40.0" prefWidth="192.0" styleClass="insert-button" stylesheets="@design.css" text="Examiner les réclamations" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import javafx.scene.chart.BarChart?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="586.0" prefWidth="497.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="reclamGui.DASHBOARDRECLController">
+   <children>
+      <VBox fx:id="VBox" layoutX="2.0" layoutY="87.0" prefHeight="499.0" prefWidth="495.0">
+         <children>
+            <BarChart fx:id="statBarChart" prefHeight="500.0" prefWidth="495.0" styleClass="cog" stylesheets="@design.css">
+              <xAxis>
+                <CategoryAxis fx:id="statCategoryAxis" prefWidth="439.0" side="BOTTOM" />
+              </xAxis>
+              <yAxis>
+                <NumberAxis fx:id="statNumberAxis" side="LEFT" />
+              </yAxis>
+            </BarChart>
+         </children>
+      </VBox>
+      <Label layoutX="127.0" layoutY="17.0" prefHeight="38.0" prefWidth="242.0" styleClass="textfield-record-design" stylesheets="@design.css" text="    Tableau de Bord de Statistiques" textAlignment="CENTER">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Button fx:id="EXIT" layoutX="431.0" layoutY="10.0" mnemonicParsing="false" onAction="#EXIT" prefHeight="26.0" prefWidth="43.0" styleClass="exit" stylesheets="@design.css" />
+      <FontAwesomeIcon fill="WHITE" glyphName="CLOSE" layoutX="447.0" layoutY="27.0" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Light.Distant?>
+<?import javafx.scene.effect.Lighting?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="485.0" prefWidth="756.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="reclamGui.AjouterReclamationController">
+   <children>
+      <AnchorPane layoutX="4.0" prefHeight="572.0" prefWidth="820.0">
+         <children>
+            <AnchorPane layoutY="1.0" prefHeight="572.0" prefWidth="200.0" styleClass="navbar" stylesheets="@design.css">
+               <children>
+                  <Circle fill="#656d73" layoutX="100.0" layoutY="89.0" radius="89.0" stroke="BLACK" strokeType="INSIDE" />
+                  <Label layoutX="49.0" layoutY="187.0" text="welcome!" textFill="#f4eeee">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Label>
+                  <Button layoutX="18.0" layoutY="222.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="162.0" styleClass="navbutton" stylesheets="@design.css" text="              Home" textFill="#fffefe">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Button>
+                  <Button layoutX="18.0" layoutY="273.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="162.0" styleClass="navbutton" stylesheets="@design.css" text="           Resevation" textFill="#fffefe">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Button>
+                  <Button layoutX="19.0" layoutY="323.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="162.0" styleClass="navbutton" stylesheets="@design.css" text="            Event" textFill="#fffefe">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Button>
+                  <Button layoutX="19.0" layoutY="370.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="162.0" styleClass="navbutton" stylesheets="@design.css" text="            Shop" textFill="#fffefe">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Button>
+                  <Button layoutX="18.0" layoutY="420.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="162.0" styleClass="navbutton" stylesheets="@design.css" text="       Maintenance" textFill="#fffefe">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Button>
+                  <Button layoutX="19.0" layoutY="469.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="162.0" styleClass="navbutton" stylesheets="@design.css" text="           Support" textFill="#fffefe">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Button>
+                  <Button layoutX="19.0" layoutY="518.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="162.0" styleClass="navbutton" stylesheets="@design.css" text="       Logout" textFill="#fffefe">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Button>
+                  <FontAwesomeIcon fill="WHITE" glyphName="HOME" layoutX="29.0" layoutY="246.0" size="2em" text="" />
+                  <FontAwesomeIcon fill="WHITE" glyphName="TICKET" layoutX="28.0" layoutY="301.0" size="2em" />
+                  <FontAwesomeIcon fill="WHITE" glyphName="STAR" layoutX="29.0" layoutY="351.0" size="2em" />
+                  <FontAwesomeIcon fill="#f4f3f3" glyphName="SUPPORT" layoutX="28.0" layoutY="497.0" size="2em" />
+                  <FontAwesomeIcon fill="WHITE" glyphName="WRENCH" layoutX="23.0" layoutY="444.0" size="2em" />
+                  <FontAwesomeIcon fill="#fafafa" glyphName="CLOSE" layoutX="29.0" layoutY="542.0" size="2em" />
+                  <FontAwesomeIcon fill="#f7f5f5" layoutX="26.0" layoutY="401.0" size="2em" text="" />
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="200.0" layoutY="41.0" prefHeight="130.0" prefWidth="620.0" styleClass="card-top" stylesheets="@design.css">
+               <children>
+                  <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="210.0" layoutY="23.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@380417705_703858877758211_884682150734971159_n%20(1).png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="200.0" layoutY="-1.0" prefHeight="42.0" prefWidth="620.0">
+               <children>
+                  <Button fx:id="EXIT" layoutX="544.0" layoutY="11.0" mnemonicParsing="false" onAction="#EXIT" prefHeight="26.0" prefWidth="56.0" styleClass="exit" stylesheets="@design.css" />
+                  <FontAwesomeIcon fill="WHITE" glyphName="CLOSE" layoutX="563.0" layoutY="31.0" size="2em" text="" />
+               </children></AnchorPane>
+            <AnchorPane layoutX="200.0" layoutY="169.0" prefHeight="404.0" prefWidth="620.0">
+               <children>
+                  <FontAwesomeIcon fill="#00000081" glyphName="USERS" layoutX="77.0" layoutY="345.0" size="15em" text="" wrappingWidth="223.0">
+                     <effect>
+                        <Lighting bumpInput="$null">
+                           <light>
+                              <Light.Distant>
+                                 <color>
+                                    <Color red="0.034036386758089066" green="0.11578947305679321" blue="0.001715399557724595" />
+                                 </color>
+                              </Light.Distant>
+                           </light>
+                        </Lighting>
+                     </effect>
+                  </FontAwesomeIcon>
+                  <AnchorPane />
+                  <ComboBox fx:id="combobox" layoutX="55.0" layoutY="116.0" onAction="#comboBox" prefHeight="42.0" prefWidth="223.0" promptText="Type reclamation" styleClass="textfield-record-design" stylesheets="@design.css" AnchorPane.bottomAnchor="246.0" AnchorPane.leftAnchor="55.0" AnchorPane.rightAnchor="342.0" AnchorPane.topAnchor="116.0" />
+                  <Button fx:id="send" layoutX="427.0" layoutY="339.0" mnemonicParsing="false" onAction="#SEND" prefHeight="34.0" prefWidth="119.0" styleClass="insert-button" stylesheets="@design.css" text="Envoyer" />
+                  <TextArea fx:id="description" layoutX="390.0" layoutY="158.0" prefHeight="151.0" prefWidth="188.0" promptText="Passez votre réclamation ici ..." styleClass="textfield-record-design" stylesheets="@design.css" />
+                  <TextField fx:id="titre" layoutX="395.0" layoutY="101.0" prefHeight="29.0" prefWidth="178.0" promptText="objet" styleClass="textfield-record-design" stylesheets="@design.css" />
+                  <Label layoutX="77.0" layoutY="69.0" text="Besoin d'aide ?">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Label>
+                  <FontAwesomeIcon fill="#f2eeee" glyphName="SEND" layoutX="522.0" layoutY="361.0" />
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+      
+   </children>
+</AnchorPane>
